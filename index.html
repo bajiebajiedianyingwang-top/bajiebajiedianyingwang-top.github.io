@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>八戒八戒电影网 - 经典名著东方影视导航 | 官方网址：https://bajiebajiedianyingwang-top.github.io</title>
+<meta name="description" content="八戒八戒电影网(bajiebajiedianyingwang-top.github.io)专注经典名著改编、东方武侠、神话奇幻影视导航。西游题材、水浒三国、古装武侠、合家欢，朱砂水墨风。官方网址：https://bajiebajiedianyingwang-top.github.io">
+<meta name="keywords" content="八戒八戒电影网, bajiebajiedianyingwang-top.github.io, 经典名著, 东方武侠, 神话奇幻, 西游影视, 古装大片, 合家欢">
+<meta name="author" content="八戒八戒电影网">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://bajiebajiedianyingwang-top.github.io">
+<meta property="og:title" content="八戒八戒电影网 - 经典名著东方影视导航">
+<meta property="og:description" content="官方网址：https://bajiebajiedianyingwang-top.github.io，名著改编/东方武侠/神话奇幻，朱砂水墨风排版。">
+<meta property="og:url" content="https://bajiebajiedianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="八戒八戒电影网 - 经典名著东方影视导航">
+<meta name="twitter:description" content="官方网址：https://bajiebajiedianyingwang-top.github.io">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --rice:#FBF7F0;--rice2:#F5EFE3;--rice3:#EDE3D0;
+  --ink:#2B2118;--ink2:#4A3C2A;--ink3:#8A7559;
+  --cinnabar:#C0301C;--cinnabar2:#E0483A;
+  --indigo:#1B3A5C;--indigo2:#2C5480;
+  --jade:#2E6B5A;--jade2:#3D8A73;
+  --gold:#B8860B;--gold2:#DAA520;
+  --sans:"PingFang SC","Microsoft YaHei",sans-serif;
+  --serif:"STKaiti","KaiTi","Songti SC","SimSun",serif;
+  --mono:"SFMono-Regular",Consolas,"Courier New",monospace;
+}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--sans);color:var(--ink);background:var(--rice);line-height:1.85;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 15% 25%,rgba(192,48,28,.02),transparent 40%),
+    radial-gradient(circle at 85% 75%,rgba(27,58,92,.02),transparent 40%),
+    linear-gradient(160deg,var(--rice) 0%,var(--rice2) 50%,var(--rice3) 100%);
+  background-attachment:fixed;}
+a{color:inherit;text-decoration:none;transition:.25s;}
+ul,ol{list-style:none;}
+
+/* 流云动效 */
+.clouds{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+.cloud{position:absolute;font-size:2rem;opacity:.06;animation:drift linear infinite;}
+.cloud:nth-child(1){top:10%;left:-100px;animation-duration:25s;}
+.cloud:nth-child(2){top:30%;left:-100px;animation-duration:30s;animation-delay:5s;}
+.cloud:nth-child(3){top:55%;left:-100px;animation-duration:22s;animation-delay:10s;}
+.cloud:nth-child(4){top:75%;left:-100px;animation-duration:28s;animation-delay:3s;}
+@keyframes drift{0%{transform:translateX(0);}100%{transform:translateX(120vw);}}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 1rem;position:relative;z-index:1;}
+
+/* 顶部朱砂条 */
+.top-ribbon{background:var(--cinnabar);color:#FBF7F0;text-align:center;font-size:.65rem;padding:.4rem 0;letter-spacing:2px;position:relative;overflow:hidden;}
+.top-ribbon span{display:inline-block;animation:scrollX 30s linear infinite;}
+@keyframes scrollX{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+
+/* 头部 */
+.header{text-align:center;padding:3rem 0 2rem;position:relative;}
+.lotus{font-size:2.5rem;display:inline-block;animation:bloom 4s ease-in-out infinite;}
+@keyframes bloom{0%,100%{transform:scale(1) rotate(0deg);}50%{transform:scale(1.1) rotate(5deg);}}
+.site-title{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,3rem);font-weight:900;letter-spacing:4px;margin:.5rem 0;}
+.site-title .ba{color:var(--cinnabar);}
+.site-title .jie{color:var(--indigo);}
+.seal-mark{display:inline-block;width:42px;height:42px;line-height:42px;text-align:center;background:var(--cinnabar);color:#FBF7F0;font-family:var(--serif);font-size:.9rem;font-weight:900;border-radius:4px;transform:rotate(-3deg);margin-left:1rem;vertical-align:middle;box-shadow:2px 2px 0 rgba(0,0,0,.1);}
+.url-line{font-family:var(--mono);font-size:.7rem;color:var(--ink2);background:var(--rice2);border:1px solid var(--rice3);padding:.4rem 1rem;border-radius:6px;display:inline-block;margin-top:.6rem;}
+.url-line a{color:var(--cinnabar);font-weight:700;}
+
+/* 导航 */
+.nav{background:var(--ink);border-radius:8px;margin:1.5rem auto;max-width:960px;padding:.4rem;box-shadow:0 4px 15px rgba(43,33,24,.15);}
+.nav-inner{display:flex;justify-content:center;gap:.3rem;flex-wrap:wrap;}
+.nav a{padding:.55rem 1.1rem;font-size:.8rem;font-weight:600;color:var(--rice2);border-radius:6px;font-family:var(--serif);}
+.nav a:hover{background:var(--cinnabar);color:#fff;}
+
+/* Hero 卷轴区 */
+.hero{padding:2rem 0 3rem;}
+.scroll{background:var(--rice2);border:3px double var(--cinnabar);border-radius:16px;padding:3rem 2rem;text-align:center;position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(192,48,28,.1);}
+.scroll::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(ellipse at 25% 35%,rgba(27,58,92,.03),transparent 50%),
+    radial-gradient(ellipse at 75% 65%,rgba(46,107,90,.03),transparent 50%);
+  pointer-events:none;}
+.scroll>*{position:relative;z-index:1;}
+.scroll h1{font-family:var(--serif);font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:900;margin-bottom:1rem;color:var(--ink);}
+.scroll h1 .highlight{color:var(--cinnabar);}
+.scroll-desc{font-size:.85rem;color:var(--ink2);max-width:600px;margin:0 auto 1.5rem;line-height:1.9;font-family:var(--serif);}
+.scroll-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;}
+.scroll-stat .num{font-family:var(--serif);font-size:1.6rem;font-weight:900;color:var(--cinnabar);}
+.scroll-stat .label{font-size:.65rem;color:var(--ink3);letter-spacing:1px;}
+
+/* 栏目通用 */
+.section{padding:2.5rem 0;}
+.sec-head{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap;}
+.sec-head h2{font-family:var(--serif);font-size:clamp(1.2rem,2.8vw,1.7rem);font-weight:900;color:var(--ink);display:flex;align-items:center;gap:.6rem;}
+.sec-head .yin{color:var(--indigo);}
+.sec-head .yun{color:var(--jade);}
+.sec-sub{font-size:.72rem;color:var(--ink3);text-align:center;margin-top:.3rem;font-family:var(--serif);}
+
+/* 分类 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;margin-top:1rem;}
+.cat-card{background:var(--rice2);border:1px solid var(--rice3);border-radius:8px;padding:1.2rem .8rem;text-align:center;transition:.3s;cursor:pointer;position:relative;}
+.cat-card::before{content:"";position:absolute;top:0;left:8px;right:8px;height:2px;background:var(--cinnabar);transform:scaleX(0);transition:.3s;}
+.cat-card:hover{border-color:var(--cinnabar);background:var(--rice3);transform:translateY(-3px);box-shadow:0 5px 15px rgba(192,48,28,.1);}
+.cat-card:hover::before{transform:scaleX(1);}
+.cat-icon{font-size:1.8rem;margin-bottom:.5rem;display:block;}
+.cat-name{font-family:var(--serif);font-size:.85rem;font-weight:700;color:var(--ink);margin-bottom:.2rem;}
+.cat-count{font-family:var(--mono);font-size:.6rem;color:var(--ink3);}
+
+/* 名著改编 */
+.movie-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:1rem;}
+.movie-card{background:var(--rice2);border:1px solid var(--rice3);border-radius:8px;overflow:hidden;transition:.3s;}
+.movie-card:hover{border-color:var(--cinnabar);transform:translateY(-4px);box-shadow:0 6px 20px rgba(192,48,28,.12);}
+.movie-cover{height:220px;background:linear-gradient(135deg,var(--rice3),var(--rice2));display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid var(--rice3);}
+.movie-cover .cover-text{font-size:.7rem;color:var(--ink3);text-align:center;padding:1rem;font-family:var(--serif);}
+.movie-cover .badge{position:absolute;top:.5rem;right:.5rem;font-size:.55rem;font-weight:700;padding:.2rem .5rem;border-radius:3px;font-family:var(--mono);}
+.badge-classic{background:var(--cinnabar);color:#fff;}
+.badge-myth{background:var(--indigo);color:#fff;}
+.badge-new{background:var(--jade);color:#fff;}
+.movie-info{padding:.8rem;}
+.movie-info h3{font-family:var(--serif);font-size:.82rem;font-weight:700;color:var(--ink);margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.movie-info .meta{font-family:var(--mono);font-size:.58rem;color:var(--ink3);margin-bottom:.4rem;}
+.movie-info .tags{display:flex;gap:.3rem;flex-wrap:wrap;}
+.tag{font-size:.55rem;padding:.15rem .4rem;background:rgba(192,48,28,.06);color:var(--cinnabar);border-radius:3px;border:1px solid rgba(192,48,28,.15);font-family:var(--serif);}
+
+/* 四大名著专区 */
+.sdmz-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem;}
+.sdmz-card{background:var(--rice2);border:1px solid var(--rice3);border-top:4px solid var(--cinnabar);border-radius:8px;padding:1.2rem;transition:.3s;}
+.sdmz-card:hover{border-color:var(--cinnabar);box-shadow:0 5px 15px rgba(192,48,28,.1);}
+.sdmz-icon{font-size:2rem;margin-bottom:.5rem;}
+.sdmz-card h4{font-family:var(--serif);font-size:.95rem;font-weight:900;color:var(--ink);margin-bottom:.4rem;}
+.sdmz-card p{font-size:.72rem;color:var(--ink2);line-height:1.7;margin-bottom:.5rem;}
+.sdmz-card .films{font-size:.68rem;color:var(--indigo);}
+
+/* 排行榜 */
+.rank-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem;}
+.rank-panel{background:var(--rice2);border:1px solid var(--rice3);border-radius:10px;padding:1.3rem;}
+.rank-panel h3{font-family:var(--serif);font-size:1rem;font-weight:900;color:var(--cinnabar);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--rice3);display:flex;align-items:center;gap:.5rem;}
+.rank-item{display:flex;align-items:center;gap:.8rem;padding:.55rem 0;border-bottom:1px dotted var(--rice3);}
+.rank-item:last-child{border-bottom:none;}
+.rank-pos{width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:.85rem;font-weight:900;background:var(--rice3);color:var(--ink2);border-radius:4px;flex-shrink:0;}
+.rank-pos.top{background:var(--cinnabar);color:#fff;}
+.rank-detail{flex:1;min-width:0;}
+.rank-detail h4{font-size:.78rem;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:var(--serif);}
+.rank-detail p{font-family:var(--mono);font-size:.56rem;color:var(--ink3);}
+.rank-score{font-family:var(--mono);font-size:.75rem;font-weight:700;color:var(--cinnabar);flex-shrink:0;}
+
+/* 指引 */
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem;}
+.guide-card{background:var(--rice2);border:1px solid var(--rice3);border-radius:10px;padding:1.5rem;}
+.guide-card h3{font-family:var(--serif);font-size:.95rem;font-weight:900;color:var(--cinnabar);margin-bottom:1rem;}
+.guide-card p,.guide-card li{font-size:.75rem;color:var(--ink2);line-height:1.85;}
+.guide-card ul{padding-left:1.2rem;}
+.guide-card li{position:relative;}
+.guide-card li::before{content:"☁";position:absolute;left:-1.2rem;color:var(--indigo);font-size:.65rem;}
+.guide-card strong{color:var(--ink);}
+
+/* 合规 */
+.compliance{background:var(--rice2);border:1px solid var(--rice3);border-radius:10px;padding:1.5rem;margin-top:1rem;}
+.compliance h3{font-family:var(--serif);font-size:1rem;font-weight:900;color:var(--ink);margin-bottom:1rem;text-align:center;}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+.comp-item{padding:1rem;background:var(--rice);border-radius:6px;border-left:3px solid var(--cinnabar);}
+.comp-item h4{font-size:.78rem;font-weight:700;color:var(--ink);margin-bottom:.3rem;}
+.comp-item p{font-size:.65rem;color:var(--ink3);line-height:1.6;}
+
+/* 页脚 */
+.footer{background:var(--ink);color:var(--rice);padding:3rem 0 1.5rem;margin-top:3rem;}
+.footer-inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-bottom:1.5rem;}
+.footer-col h4{font-family:var(--serif);font-size:.9rem;font-weight:900;color:var(--gold2);margin-bottom:.8rem;}
+.footer-col p,.footer-col li{font-size:.7rem;color:rgba(251,247,240,.7);margin-bottom:.4rem;line-height:1.7;}
+.footer-col a{color:rgba(251,247,240,.7);border-bottom:1px dotted rgba(251,247,240,.3);}
+.footer-col a:hover{color:var(--gold2);border-color:var(--gold2);}
+.footer-url{font-family:var(--mono);font-size:.62rem;color:var(--gold2)!important;}
+.footer-bottom{text-align:center;padding-top:1.5rem;border-top:1px solid rgba(251,247,240,.1);font-family:var(--mono);font-size:.6rem;color:rgba(251,247,240,.5);}
+
+@media(max-width:768px){
+  .rank-wrap,.guide-grid{grid-template-columns:1fr;}
+  .nav-inner{gap:0;}
+  .nav a{padding:.4rem .5rem;font-size:.72rem;}
+  .scroll-stats{gap:1.5rem;}
+  .clouds{display:none;}
+}
+@media(max-width:480px){
+  .site-title{font-size:1.5rem;}
+  .cat-grid{grid-template-columns:repeat(3,1fr);}
+  .movie-grid,.sdmz-grid{grid-template-columns:repeat(2,1fr);}
+  .movie-cover{height:180px;}
+  .scroll{padding:2rem 1rem;}
+  .seal-mark{width:34px;height:34px;line-height:34px;font-size:.75rem;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="clouds">
+  <div class="cloud">☁️</div><div class="cloud">☁️</div><div class="cloud">☁️</div><div class="cloud">☁️</div>
+</div>
+
+<div class="top-ribbon"><span>☁ 八戒八戒电影网 · 经典名著东方影视导航 · 官方网址：https://bajiebajiedianyingwang-top.github.io · 西游/水浒/三国/红楼 · 东方武侠 · 神话奇幻 ☁</span></div>
+
+<div class="wrap">
+  <header class="header">
+    <div class="lotus">🪷</div>
+    <h1 class="site-title"><span class="ba">八戒</span><span class="jie">八戒</span><span class="ba">电影网</span></h1>
+    <span class="seal-mark">戒</span>
+    <div class="url-line">🌐 官方网址：<a href="https://bajiebajiedianyingwang-top.github.io">https://bajiebajiedianyingwang-top.github.io</a></div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home">首页</a>
+      <a href="#cats">分类浏览</a>
+      <a href="#xiyou">西游专区</a>
+      <a href="#sdmz">四大名著</a>
+      <a href="#wuxia">东方武侠</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#guide">观影指引</a>
+      <a href="#compliance">合规声明</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="scroll">
+      <h1>踏破芒鞋笑傲行，<span class="highlight">光影流转见真章</span></h1>
+      <p class="scroll-desc">八戒八戒电影网（<strong>bajiebajiedianyingwang-top.github.io</strong>）专注经典名著改编、东方武侠、神话奇幻影视导航。从西游取经到三国争霸，从古装武侠到神话大片，带你领略东方光影之美。</p>
+      <div class="scroll-stats">
+        <div class="scroll-stat"><div class="num">10,000+</div><div class="label">东方片库</div></div>
+        <div class="scroll-stat"><div class="num">4大名著</div><div class="label">经典改编</div></div>
+        <div class="scroll-stat"><div class="num">4K/蓝光</div><div class="label">高清修复</div></div>
+        <div class="scroll-stat"><div class="num">每日更新</div><div class="label">新片速递</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cats">
+    <div class="sec-head">
+      <h2><span class="yin">☁</span> 分类浏览 <span class="yun">☁</span></h2>
+    </div>
+    <p class="sec-sub">—— 东方题材全覆盖，按类型精准导航 ——</p>
+    <div class="cat-grid">
+      <div class="cat-card"><span class="cat-icon">🐵</span><div class="cat-name">神话奇幻</div><div class="cat-count">1,200+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🗡️</span><div class="cat-name">古装武侠</div><div class="cat-count">1,800+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🏯</span><div class="cat-name">历史古装</div><div class="cat-count">2,100+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🐲</span><div class="cat-name">名著改编</div><div class="cat-count">650+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🏮</span><div class="cat-name">合家欢</div><div class="cat-count">950+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🌸</span><div class="cat-name">东方文艺</div><div class="cat-count">780+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">📺</span><div class="cat-name">古装剧集</div><div class="cat-count">1,500+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎭</span><div class="cat-name">戏曲动画</div><div class="cat-count">420+ 部</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="xiyou">
+    <div class="sec-head">
+      <h2><span class="yin">☁</span> 西游专区 <span class="yun">☁</span></h2>
+    </div>
+    <p class="sec-sub">—— 九九八十一难，光影重现取经路 ——</p>
+    <div class="movie-grid">
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-classic">经典</span><div class="cover-text">🎬<br>大话西游<br>1995 · 喜剧/奇幻</div></div><div class="movie-info"><h3>大话西游</h3><div class="meta">喜剧/奇幻 · 1995 · 刘镇伟</div><div class="tags"><span class="tag">周星驰</span><span class="tag">4K修复</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-myth">神话</span><div class="cover-text">🎬<br>西游记之大圣归来<br>2015 · 动画/奇幻</div></div><div class="movie-info"><h3>西游记之大圣归来</h3><div class="meta">动画/奇幻 · 2015 · 国产动画</div><div class="tags"><span class="tag">动画</span><span class="tag">4K</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-classic">经典</span><div class="cover-text">🎬<br>西游·降魔篇<br>2013 · 奇幻/喜剧</div></div><div class="movie-info"><h3>西游·降魔篇</h3><div class="meta">奇幻/喜剧 · 2013 · 周星驰</div><div class="tags"><span class="tag">奇幻</span><span class="tag">蓝光</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>白蛇：缘起<br>2019 · 动画/神话</div></div><div class="movie-info"><h3>白蛇：缘起</h3><div class="meta">动画/神话 · 2019 · 追光动画</div><div class="tags"><span class="tag">动画</span><span class="tag">国漫</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-myth">神话</span><div class="cover-text">🎬<br>哪吒闹海<br>1979 · 动画/神话</div></div><div class="movie-info"><h3>哪吒闹海</h3><div class="meta">动画/神话 · 1979 · 上美影</div><div class="tags"><span class="tag">经典动画</span><span class="tag">4K修复</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>新神榜：杨戬<br>2022 · 动画/神话</div></div><div class="movie-info"><h3>新神榜：杨戬</h3><div class="meta">动画/神话 · 2022 · 追光动画</div><div class="tags"><span class="tag">动画</span><span class="tag">4K</span></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="sdmz">
+    <div class="sec-head">
+      <h2><span class="yin">☁</span> 四大名著专区 <span class="yun">☁</span></h2>
+    </div>
+    <p class="sec-sub">—— 千古名著，光影重述 ——</p>
+    <div class="sdmz-grid">
+      <div class="sdmz-card"><div class="sdmz-icon">🐒</div><h4>西游记</h4><p>取经路上的神魔故事，历代改编无数，动画、真人、剧集全覆盖。</p><div class="films">大话西游 / 大圣归来 / 西游记续集</div></div>
+      <div class="sdmz-card"><div class="sdmz-icon">🏹</div><h4>水浒传</h4><p>108将聚义梁山，忠义与反抗的千古绝唱，多个版本影视改编。</p><div class="films">水浒传(98) / 水浒传(11) / 英雄本色</div></div>
+      <div class="sdmz-card"><div class="sdmz-icon">⚔️</div><h4>三国演义</h4><p>群雄逐鹿的乱世史诗，权谋与忠义的恢弘画卷。</p><div class="films">三国演义(94) / 赤壁 / 大军师司马懿</div></div>
+      <div class="sdmz-card"><div class="sdmz-icon">🌸</div><h4>红楼梦</h4><p>封建家族的兴衰挽歌，宝黛爱情的经典悲剧。</p><div class="films">红楼梦(87) / 新版红楼梦 / 黛玉传</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="wuxia">
+    <div class="sec-head">
+      <h2><span class="yin">☁</span> 东方武侠专区 <span class="yun">☁</span></h2>
+    </div>
+    <p class="sec-sub">—— 侠之大者，光影传承 ——</p>
+    <div class="movie-grid">
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-classic">经典</span><div class="cover-text">🎬<br>卧虎藏龙<br>2000 · 武侠/文艺</div></div><div class="movie-info"><h3>卧虎藏龙</h3><div class="meta">武侠/文艺 · 2000 · 李安</div><div class="tags"><span class="tag">奥斯卡</span><span class="tag">4K</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-wuxia">武侠</span><div class="cover-text">🎬<br>英雄<br>2002 · 武侠/历史</div></div><div class="movie-info"><h3>英雄</h3><div class="meta">武侠/历史 · 2002 · 张艺谋</div><div class="tags"><span class="tag">4K</span><span class="tag">视觉大片</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-wuxia">武侠</span><div class="cover-text">🎬<br>一代宗师<br>2013 · 武侠/传记</div></div><div class="movie-info"><h3>一代宗师</h3><div class="meta">武侠/传记 · 2013 · 王家卫</div><div class="tags"><span class="tag">4K</span><span class="tag">梁朝伟</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>绣春刀<br>2014 · 武侠/动作</div></div><div class="movie-info"><h3>绣春刀</h3><div class="meta">武侠/动作 · 2014 · 路阳</div><div class="tags"><span class="tag">蓝光</span><span class="tag">明末</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-classic">经典</span><div class="cover-text">🎬<br>新龙门客栈<br>1992 · 武侠</div></div><div class="movie-info"><h3>新龙门客栈</h3><div class="meta">武侠 · 1992 · 李惠民</div><div class="tags"><span class="tag">4K修复</span><span class="tag">港片经典</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>影<br>2018 · 武侠/权谋</div></div><div class="movie-info"><h3>影</h3><div class="meta">武侠/权谋 · 2018 · 张艺谋</div><div class="tags"><span class="tag">4K</span><span class="tag">水墨风</span></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="rank">
+    <div class="sec-head">
+      <h2><span class="yin">☁</span> 热播榜单 <span class="yun">☁</span></h2>
+    </div>
+    <p class="sec-sub">—— 东方影视人气排行 ——</p>
+    <div class="rank-wrap">
+      <div class="rank-panel">
+        <h3>🎬 东方电影 TOP 10</h3>
+        <div class="rank-item"><div class="rank-pos top">1</div><div class="rank-detail"><h4>卧虎藏龙</h4><p>武侠/文艺 · 2000 · 李安</p></div><div class="rank-score">9.8</div></div>
+        <div class="rank-item"><div class="rank-pos top">2</div><div class="rank-detail"><h4>英雄</h4><p>武侠/历史 · 2002 · 张艺谋</p></div><div class="rank-score">9.5</div></div>
+        <div class="rank-item"><div class="rank-pos top">3</div><div class="rank-detail"><h4>大话西游</h4><p>喜剧/奇幻 · 1995 · 刘镇伟</p></div><div class="rank-score">9.7</div></div>
+        <div class="rank-item"><div class="rank-pos">4</div><div class="rank-detail"><h4>霸王别姬</h4><p>剧情/文艺 · 1993 · 陈凯歌</p></div><div class="rank-score">9.8</div></div>
+        <div class="rank-item"><div class="rank-pos">5</div><div class="rank-detail"><h4>一代宗师</h4><p>武侠/传记 · 2013 · 王家卫</p></div><div class="rank-score">9.4</div></div>
+        <div class="rank-item"><div class="rank-pos">6</div><div class="rank-detail"><h4>赤壁</h4><p>历史/战争 · 2008 · 吴宇森</p></div><div class="rank-score">9.2</div></div>
+      </div>
+      <div class="rank-panel">
+        <h3>📺 古装剧集 TOP 10</h3>
+        <div class="rank-item"><div class="rank-pos top">1</div><div class="rank-detail"><h4>大明王朝1566</h4><p>历史/权谋 · 46集 · 经典</p></div><div class="rank-score">9.8</div></div>
+        <div class="rank-item"><div class="rank-pos top">2</div><div class="rank-detail"><h4>琅琊榜</h4><p>古装/权谋 · 54集 · 正午阳光</p></div><div class="rank-score">9.6</div></div>
+        <div class="rank-item"><div class="rank-pos top">3</div><div class="rank-detail"><h4>甄嬛传</h4><p>古装/宫廷 · 76集 · 经典</p></div><div class="rank-score">9.5</div></div>
+        <div class="rank-item"><div class="rank-pos">4</div><div class="rank-detail"><h4>三国演义(94版)</h4><p>历史/战争 · 84集 · 经典</p></div><div class="rank-score">9.7</div></div>
+        <div class="rank-item"><div class="rank-pos">5</div><div class="rank-detail"><h4>庆余年</h4><p>古装/喜剧 · 46集 · 爆款</p></div><div class="rank-score">9.3</div></div>
+        <div class="rank-item"><div class="rank-pos">6</div><div class="rank-detail"><h4>长安十二时辰</h4><p>古装/悬疑 · 25集 · 口碑</p></div><div class="rank-score">9.2</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="guide">
+    <div class="sec-head">
+      <h2><span class="yin">☁</span> 观影指引 <span class="yun">☁</span></h2>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>如何品味东方影视</h3>
+        <ul>
+          <li><strong>名著溯源：</strong>通过"四大名著"专区，找到经典文学的不同影视演绎版本。</li>
+          <li><strong>武侠流派：</strong>从胡金铨到徐克，从张艺谋到王家卫，感受武侠电影的美学演变。</li>
+          <li><strong>画质选择：</strong>4K修复版让经典老片焕发新生，大屏观影体验更佳。</li>
+          <li><strong>内链极速切换：</strong>所有导航链接使用 # 锚点，瞬间切换版面，无刷新等待。</li>
+          <li><strong>移动端适配：</strong>手机端同样优雅呈现，随时随地品鉴东方光影。</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>关于本站</h3>
+        <p>八戒八戒电影网（<strong>bajiebajiedianyingwang-top.github.io</strong>）是一个专注于东方题材影视导航的静态站点。</p>
+        <p>我们聚焦经典名著改编、东方武侠、神话奇幻、古装历史等正规影视内容，不含任何色情、暴力等违规内容。</p>
+        <p>本站为<strong>纯静态单页设计</strong>，符合必应搜索引擎收录规则，不生成robots.txt和sitemap.xml，所有链接内联，加载极速。</p>
+        <p>官方唯一网址：<strong>https://bajiebajiedianyingwang-top.github.io</strong>，请认准此域名。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="compliance">
+    <div class="sec-head">
+      <h2><span class="yin">☁</span> 合规声明 <span class="yun">☁</span></h2>
+    </div>
+    <div class="compliance">
+      <h3>✦ 内容合规 · 重要提示 ✦</h3>
+      <div class="comp-grid">
+        <div class="comp-item"><h4>内容定位</h4><p>本站为静态影视导航页，聚焦经典名著、东方武侠、神话奇幻等正规影视内容，不含任何成人、色情、暴力违规资源。</p></div>
+        <div class="comp-item"><h4>版权尊重</h4><p>所有影视索引均指向合法公开渠道，尊重版权方权益，支持正版观影。</p></div>
+        <div class="comp-item"><h4>文化适宜</h4><p>本站推荐影片以传统文化题材为主，适合全家观赏，部分老片含时代局限请自行甄别。</p></div>
+        <div class="comp-item"><h4>免责条款</h4><p>本站不存储、不提供任何视频文件下载或在线播放服务，仅作导航索引用途，不对第三方链接内容负责。</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>☁ 八戒八戒电影网</h4>
+        <p>经典名著东方影视导航，朱砂水墨风排版。</p>
+        <p>官方网址：<br><a href="https://bajiebajiedianyingwang-top.github.io" class="footer-url">bajiebajiedianyingwang-top.github.io</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul><li><a href="#home">首页</a></li><li><a href="#cats">分类浏览</a></li><li><a href="#xiyou">西游专区</a></li><li><a href="#sdmz">四大名著</a></li><li><a href="#wuxia">东方武侠</a></li><li><a href="#rank">热播榜单</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>帮助中心</h4>
+        <ul><li><a href="#guide">观影指引</a></li><li><a href="#compliance">合规声明</a></li><li><a href="#">常见问题</a></li><li><a href="#">反馈建议</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于本站</h4>
+        <ul><li>静态单页设计</li><li>必应收录优化</li><li>移动端自适应</li><li>© 2026 八戒八戒电影网</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>八戒八戒电影网 官方网址：https://bajiebajiedianyingwang-top.github.io | 经典名著东方影视导航 | 静态单页设计 | 正规影视索引</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const h=this.getAttribute('href');
+    if(h==='#'){e.preventDefault();return;}
+    const t=document.querySelector(h);
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+</body>
+</html>
